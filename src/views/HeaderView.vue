@@ -1,4 +1,4 @@
 <script setup lang="ts"></script>
 <template>
-  <div>MAIN VIEW</div>
+  <header>HEADER VIEW</header>
 </template>
