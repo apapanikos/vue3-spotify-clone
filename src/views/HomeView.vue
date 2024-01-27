@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import TheWelcome from '../components/TheWelcome.vue'
 import { useHttpClient } from '@/shared/services/http/useHttpClient'
 
 // onMounted(async () => {
@@ -10,7 +9,5 @@ import { useHttpClient } from '@/shared/services/http/useHttpClient'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <main></main>
 </template>
