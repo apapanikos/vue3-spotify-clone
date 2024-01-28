@@ -3,5 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
+.layout-container {
+  grid-template-areas:
+    'left-sidebar main-view right-sidebar'
+    'now-playing-bar now-playing-bar now-playing-bar';
 }
