@@ -1,35 +1,26 @@
 @import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+.layout-container {
+  grid-template-areas:
+    'left-sidebar main-view right-sidebar'
+    'now-playing-bar now-playing-bar now-playing-bar';
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.left-sidebar {
+  grid-area: left-sidebar;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.now-playing-bar {
+  grid-area: now-playing-bar;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.right-sidebar {
+  grid-area: right-sidebar;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.main-view {
+  grid-area: main-view/main-view/main-view/right-sidebar;
 }

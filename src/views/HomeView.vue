@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { onMounted } from 'vue'
+import { useHttpClient } from '@/shared/services/http/useHttpClient'
+
+// onMounted(async () => {
+//   const { get, isLoading, response, error } = useHttpClient<any[]>()
+//   await get('/me', {})
+// })
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <main></main>
 </template>
