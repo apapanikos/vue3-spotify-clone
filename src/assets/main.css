@@ -8,3 +8,19 @@
     'left-sidebar main-view right-sidebar'
     'now-playing-bar now-playing-bar now-playing-bar';
 }
+
+.left-sidebar {
+  grid-area: left-sidebar;
+}
+
+.now-playing-bar {
+  grid-area: now-playing-bar;
+}
+
+.right-sidebar {
+  grid-area: right-sidebar;
+}
+
+.main-view {
+  grid-area: main-view/main-view/main-view/right-sidebar;
+}
